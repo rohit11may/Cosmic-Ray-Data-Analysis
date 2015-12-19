@@ -12,8 +12,8 @@ tempFilePath = (os.path.abspath(os.path.join(inspect.getfile(inspect.currentfram
 fileVar = open("\\".join(tempFilePath[0:len(tempFilePath)-1]) + fileName)
 
 density = []
-dateStr = fileVar.readline().split(',')[0:2]
-dateStr = dateStr[0] + ',' + dateStr[1][0:2]
+line1 = fileVar.readline().split(',')[0:2]
+dateStr = line1[0] + ',' + line1[1][0:2]
 currentdate_object = datetime.strptime(dateStr, '%Y/%m/%d,%H')
 count = 1
 numberofHitsY = []
