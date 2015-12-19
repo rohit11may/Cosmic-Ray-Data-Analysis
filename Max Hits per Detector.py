@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-
+print("running")
 def constrain(minimum, maximum, small, large, val):
     ratio = (maximum - minimum) / (large - small)
     final = []
